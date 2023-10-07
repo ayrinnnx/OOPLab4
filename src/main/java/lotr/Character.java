@@ -6,13 +6,17 @@ import lombok.Setter;
 
 @Getter @Setter
 
-public abstract class Character { //abstract 'cause we do not creating objects of it, just inherit
+public class Character {
     private int power;
     private int hp;
     protected Kick kickStrategy;
 
     public Character(Kick kickStrategy) {
         this.kickStrategy = kickStrategy;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp < 0 ? 0 : hp;
     }
 
     public void kick(Character c) {
@@ -23,4 +27,8 @@ public abstract class Character { //abstract 'cause we do not creating objects o
         return hp > 0;
     }
 
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "{hp=" + hp + ", power=" + power + "}";
+    }
 }
