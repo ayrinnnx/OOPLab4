@@ -1,5 +1,4 @@
 package lotr;
-import kick.Kick;
 import kick.kingKick;
 import java.util.Random;
 
