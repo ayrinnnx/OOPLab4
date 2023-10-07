@@ -7,8 +7,8 @@ public class King extends Character{
     public King() {
         super(new kingKick());
         Random rand = new Random();
-        setHp(rand.nextInt(5, 16));
-        setPower(rand.nextInt(5, 16));
+        setHp(rand.nextInt(16 - 5 + 1) + 5);
+        setPower(rand.nextInt(16 - 5 + 1) + 5);
     }
 
 }
