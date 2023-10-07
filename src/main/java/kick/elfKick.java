@@ -9,5 +9,6 @@ public class elfKick implements Kick{
         } else {
             target.setHp(target.getHp() - 1);
         }
+        System.out.println("Just a magic and no hp :)");
     }
 }
