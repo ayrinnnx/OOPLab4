@@ -7,7 +7,7 @@ public class Knight extends Character{
 
     public Knight() {
         super(new kingKick());
-        setHp(rand.nextInt(13 - 2 + 1) + 2);
-        setPower(rand.nextInt(13 - 2 + 1) + 2);
+        setHp(rand.nextInt(12 - 2 + 1) + 2);
+        setPower(rand.nextInt(12 - 2 + 1) + 2);
     }
 }
